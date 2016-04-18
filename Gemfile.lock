@@ -1,0 +1,84 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.2.6)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    addressable (2.4.0)
+    chrono (0.3.0)
+      activesupport
+    dotenv (2.1.1)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
+    i18n (0.7.0)
+    json (1.8.3)
+    mem (0.1.5)
+    minitest (5.8.4)
+    multipart-post (2.0.0)
+    octokit (4.3.0)
+      sawyer (~> 0.7.0, >= 0.5.3)
+    pusher-client (0.6.2)
+      json
+      websocket (~> 1.0)
+    rake (11.1.2)
+    redis (3.3.0)
+    redis-namespace (1.5.2)
+      redis (~> 3.0, >= 3.0.4)
+    ruboty (1.2.2)
+      activesupport
+      bundler
+      dotenv
+      mem
+      slop
+    ruboty-alias (0.0.8)
+      ruboty (>= 1.1.1)
+    ruboty-cron (1.1.0)
+      activesupport
+      chrono
+      ruboty (>= 0.2.0)
+    ruboty-evaluate (1.1.0)
+      ruboty
+    ruboty-github (0.2.1)
+      activesupport
+      octokit
+      ruboty
+    ruboty-google_image (0.1.0)
+      faraday
+      faraday_middleware
+      ruboty
+    ruboty-idobata (0.0.6)
+      pusher-client
+      ruboty
+    ruboty-redis (0.0.6)
+      redis
+      redis-namespace
+      ruboty
+    sawyer (0.7.0)
+      addressable (>= 2.3.5, < 2.5)
+      faraday (~> 0.8, < 0.10)
+    slop (4.3.0)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    websocket (1.2.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake
+  ruboty-alias
+  ruboty-cron
+  ruboty-evaluate
+  ruboty-github
+  ruboty-google_image
+  ruboty-idobata
+  ruboty-redis
+
+BUNDLED WITH
+   1.11.2
